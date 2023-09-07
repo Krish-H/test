@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:("Poppins","Roboto","Arvo");
+}
+
+.todo-container{
+  background:linear-gradient(rgb(32, 32, 32),rgba(26, 29, 28, 0.946));
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+
+}
+.todo-head {
+  margin: 50px auto 20px;
+  padding: 40px 30px 70px;
+  width: 100%;
+  max-width: 545px;
+  border-radius: 10px;
+  background-color: aliceblue;
+
+}
+.todo-head h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    font-family: Arvo;
+}
+.todo-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(165, 165, 165);
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    
+}
+.todo-field input{
+    flex: 1;
+   padding: 10px;
+    height: 40px;
+    outline: none;
+   border: none;
+   background: transparent;
+   font-size: large;
+   font-family: Roboto;
+   font-weight: bold;
+}
+.todo-field button{
+    border:none;
+    outline: none;
+   border-radius: 10px;
+    padding: 16px 50px;
+    background-color: rgb(42, 164, 212);
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+.todo-field button:hover{
+    background-color:rgb(47, 156, 199) ;
+}
+ol li{
+    color: black;
+    padding: 12px 8px 12px 50px;
+    list-style: none;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-family: Roboto;
+    font-weight:bold;
+   
+}
+ol li:hover{
+    background-color: rgb(218, 213, 213);
+    border-radius:100px;
+}
+li::before{
+   content: '';
+   background-image: url(C:/Users/lenovo/Downloads/circle_box.png);
+   position: absolute;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background-size: cover;
+   background-position: center;
+   left: 8px;
+   top: 11px;
+}
+
+ol li.checked::before{
+ 
+    background-image: url(C:/Users/lenovo/Downloads/circle_checked.png) ;
+}
+ol li.checked{
+    text-decoration: line-through;
+
+}
+ol li span {
+    position: absolute;
+    top:3px;
+     right: 2px;
+     width: 42px;
+     height: 42px;
+    line-height: 40px;
+     font-size: 22px;
+     text-align: center;
+     border-radius: 50%;
+     
+
+} 
+
+ol li span:hover{
+  background-color: rgba(208, 23, 23, 0.891);
+  color: aliceblue;
+}
